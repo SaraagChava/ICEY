@@ -3,341 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ICEY DATABASE | Unofficial Investigation Archive</title>
-
-    <!-- CSS -->
+    <title>ICEY Archive - Official Investigation Database</title>
     <link rel="stylesheet" href="style.css">
-
-    <!-- Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
-    <!-- ===================================================== -->
-    <!-- HEADER -->
-    <!-- ===================================================== -->
-
-    <header id="header">
-
-        <h1>ICEY CRIME DATABASE</h1>
-
-        <p class="subtitle">
-            Unofficial Public Archive • Last Updated 03:17 AM
-        </p>
-
-    </header>
-
-
-    <!-- ===================================================== -->
-    <!-- NAVIGATION -->
-    <!-- ===================================================== -->
-
-    <nav id="navbar">
-
-        <a href="#summary">Case</a>
-
-        <a href="#rumours">Rumours</a>
-
-        <a href="#victims">Victims</a>
-
-        <a href="#timeline">Timeline</a>
-
-        <a href="#gallery">Gallery</a>
-
-        <a href="#evidence">Evidence</a>
-
-        <a href="#tips">Tips</a>
-
-    </nav>
-
-
-    <!-- ===================================================== -->
-    <!-- HERO -->
-    <!-- ===================================================== -->
-
-    <section id="hero">
-
-        <h2>⚠ PUBLIC WARNING ⚠</h2>
-
-        <p>
-            Reports involving the individual known as
-            <strong>"ICEY"</strong>
-            continue to increase throughout the county.
-        </p>
-
-        <p>
-            Authorities have neither confirmed nor denied
-            the existence of the suspect.
-        </p>
-
-    </section>
-
-
-    <!-- ===================================================== -->
-    <!-- CASE SUMMARY -->
-    <!-- ===================================================== -->
-
-    <section id="summary">
-
-        <h2>Case Summary</h2>
-
-        <p>
-            Icey is believed to travel using an old
-            ice cream truck that appears after midnight.
-            Witnesses report hearing cheerful music before
-            unexplained disappearances occur.
-        </p>
-
-        <p>
-            The truck has never been clearly captured
-            on CCTV footage.
-        </p>
-
-        <p>
-            Several investigators have disappeared while
-            attempting to locate the vehicle.
-        </p>
-
-    </section>
-
-
-    <!-- ===================================================== -->
-    <!-- RUMOURS -->
-    <!-- ===================================================== -->
-
-    <section id="rumours">
-
-        <h2>Local Rumours</h2>
-
-        <ul>
-
-            <li>
-                The truck only appears when the streets are empty.
-            </li>
-
-            <li>
-                Icey's face has never been photographed clearly.
-            </li>
-
-            <li>
-                Children claim he offers "one last free ice cream."
-            </li>
-
-            <li>
-                CCTV recordings freeze exactly 17 seconds before
-                the truck arrives.
-            </li>
-
-            <li>
-                Every witness remembers the same melody,
-                but nobody can identify the song.
-            </li>
-
-        </ul>
-
-    </section>
-
-
-    <!-- ===================================================== -->
-    <!-- VICTIMS -->
-    <!-- ===================================================== -->
-
-    <section id="victims">
-
-        <h2>Known Victims</h2>
-
-        <table>
-
-            <tr>
-                <th>Name</th>
-                <th>Year</th>
-                <th>Status</th>
-            </tr>
-
-            <tr>
-                <td>Sarah Mills</td>
-                <td>2016</td>
-                <td>Missing</td>
-            </tr>
-
-            <tr>
-                <td>Officer Daniel Ross</td>
-                <td>2018</td>
-                <td>Missing</td>
-            </tr>
-
-            <tr>
-                <td>Jake Morgan</td>
-                <td>2021</td>
-                <td>Missing</td>
-            </tr>
-
-            <tr>
-                <td>Emily Carter</td>
-                <td>2023</td>
-                <td>Missing</td>
-            </tr>
-
-        </table>
-
-    </section>
-
-
-    <!-- ===================================================== -->
-    <!-- TIMELINE -->
-    <!-- ===================================================== -->
-
-    <section id="timeline">
-
-        <h2>Incident Timeline</h2>
-
-        <ul>
-
-            <li>
-                2004 — First reported sighting of the truck.
-            </li>
-
-            <li>
-                2011 — Multiple witnesses hear music with no vehicle present.
-            </li>
-
-            <li>
-                2018 — Investigation team disappears.
-            </li>
-
-            <li>
-                2024 — Anonymous website containing Icey files appears online.
-            </li>
-
-        </ul>
-
-    </section>
-
-
-    <!-- ===================================================== -->
-    <!-- CCTV -->
-    <!-- ===================================================== -->
-
-    <section id="gallery">
-
-        <h2>CCTV Gallery</h2>
-
-        <div class="gallery">
-
-            <img src="assets/images/truck.jpg" alt="Ice Cream Truck">
-
-            <img src="assets/images/cctv1.jpg" alt="CCTV Frame">
-
-            <img src="assets/images/cctv2.jpg" alt="Evidence">
-
+    <!-- CRT Overlay & Effects -->
+    <div class="crt-overlay"></div>
+    <div class="vignette"></div>
+    <div class="tape-damage"></div>
+
+    <!-- VHS Intro Sequence -->
+    <div id="vhs-intro">
+        <div class="vhs-text top-left">PLAY</div>
+        <div class="vhs-text top-right">SP 0:00:00</div>
+        <div class="vhs-text bottom-left">OAKHAVEN EVIDENCE DEPT.</div>
+        <div class="vhs-text bottom-right" id="vhs-date">TAPE 01</div>
+        
+        <div class="center-warning">
+            <h1>ICEY ARCHIVE</h1>
+            <p>RESTRICTED ACCESS. THE FOLLOWING MATERIAL HAS BEEN DIGITIZED FROM RECOVERED ANALOG MEDIA.</p>
+            <p>INITIALIZING CALIBRATION...</p>
+            <div class="loading-bar"><div class="loading-fill"></div></div>
+            <p id="loading-text">0%</p>
+            <button id="enter-archive" class="hidden">INITIALIZE AUDIO & ENTER ARCHIVE</button>
         </div>
+    </div>
 
-    </section>
+    <!-- Main Application -->
+    <div id="app" class="hidden">
+        <header>
+            <div class="logo">ICEY_ARCHIVE<span class="cursor">_</span></div>
+            <nav>
+                <button class="nav-btn active" data-target="home">HOME</button>
+                <button class="nav-btn" data-target="timeline">TIMELINE</button>
+                <button class="nav-btn" data-target="board">INVESTIGATION BOARD</button>
+                <button class="nav-btn" data-target="terminal">TERMINAL</button>
+                <button class="nav-btn" data-target="about">ABOUT / DISCLAIMER</button>
+            </nav>
+            <div class="audio-status">AUDIO: <span id="audio-indicator">ON</span></div>
+        </header>
 
+        <main>
+            <!-- Home Section -->
+            <section id="home" class="view active">
+                <div class="hero">
+                    <h2>WELCOME TO THE ARCHIVE</h2>
+                    <p>Compiled by independent filmmakers, this database catalogs the contradictory evidence surrounding the urban legend known as "ICEY".</p>
+                    <p>WARNING: Data integrity is unverified. Cross-reference all witness testimonies.</p>
+                </div>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <h3>LATEST RECOVERY</h3>
+                        <p>Audio Cassette #44 - Found near Blackwood Route.</p>
+                        <div class="waveform"></div>
+                    </div>
+                    <div class="grid-item">
+                        <h3>STATUS</h3>
+                        <p class="glitch-text" id="status-text">74 FILES UNACCOUNTED FOR</p>
+                    </div>
+                </div>
+            </section>
 
-    <!-- ===================================================== -->
-    <!-- EVIDENCE -->
-    <!-- ===================================================== -->
+            <!-- Timeline Section -->
+            <section id="timeline" class="view">
+                <h2>CHRONOLOGY OF DISSONANCE</h2>
+                <div class="timeline-container">
+                    <div class="timeline-event">
+                        <div class="date unstable-date">OCTOBER 14, 1974</div>
+                        <div class="content">
+                            <h4>The First Journal</h4>
+                            <p>A surveyor notes abnormal temperature drops and a "static shadow" in the photographs of the old mill. The negatives were subsequently lost.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-event">
+                        <div class="date">AUGUST 3, 1988</div>
+                        <div class="content">
+                            <h4>Cassette Intercept</h4>
+                            <p>Local radio station WHZ picks up 14 seconds of distorted audio. A voice repeating "It freezes the lens."</p>
+                        </div>
+                    </div>
+                    <div class="timeline-event">
+                        <div class="date unstable-date">NOVEMBER 11, 1999</div>
+                        <div class="content">
+                            <h4>Witness 04 (FICTIONAL REENACTMENT)</h4>
+                            <p>Testimony regarding the silhouette on the highway. Claims the entity had no face, only a reflection of the static on a television screen.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-    <section id="evidence">
+            <!-- Investigation Board Section -->
+            <section id="board" class="view">
+                <h2>EVIDENCE BOARD</h2>
+                <p class="hint">Drag and arrange items to form connections.</p>
+                <div class="corkboard" id="corkboard">
+                    <div class="evidence-item photo" id="ev1" style="top: 10%; left: 10%;">
+                        <div class="photo-inner"></div>
+                        <span class="label">Site A - Blur</span>
+                    </div>
+                    <div class="evidence-item note" id="ev2" style="top: 20%; left: 50%;">
+                        <p>Why do the timestamps overlap?</p>
+                    </div>
+                    <div class="evidence-item photo" id="ev3" style="top: 60%; left: 20%;">
+                        <div class="photo-inner distorted"></div>
+                        <span class="label">Tape Fragment</span>
+                    </div>
+                    <svg class="string-layer" width="100%" height="100%">
+                        <line x1="15%" y1="15%" x2="55%" y2="25%" stroke="#8a0303" stroke-width="2" />
+                    </svg>
+                </div>
+            </section>
 
-        <h2>Evidence Locker</h2>
+            <!-- Archive Terminal Section -->
+            <section id="terminal" class="view">
+                <div class="terminal-window">
+                    <div class="terminal-output" id="terminal-output">
+                        <p>OAKHAVEN MAINFRAME v2.1</p>
+                        <p>Type HELP for available commands.</p>
+                    </div>
+                    <div class="terminal-input-line">
+                        <span>C:\ARCHIVE></span>
+                        <input type="text" id="terminal-input" autocomplete="off" spellcheck="false">
+                    </div>
+                </div>
+            </section>
 
-        <ul>
-
-            <li>Melted ice cream wrapper recovered at Scene #12</li>
-
-            <li>Broken music box mechanism</li>
-
-            <li>Anonymous handwritten map</li>
-
-            <li>Distorted radio recording</li>
-
-        </ul>
-
-    </section>
-
-
-    <!-- ===================================================== -->
-    <!-- AUDIO -->
-    <!-- ===================================================== -->
-
-    <section id="audio">
-
-        <h2>Recovered Audio</h2>
-
-        <p>
-            Evidence Item A-17
-        </p>
-
-        <!-- Person 2 can control this with JavaScript -->
-
-        <audio controls loop>
-
-            <source
-                src="assets/audio/icecream.mp3"
-                type="audio/mpeg">
-
-            Your browser does not support audio.
-
-        </audio>
-
-    </section>
-
-
-    <!-- ===================================================== -->
-    <!-- TIPS -->
-    <!-- ===================================================== -->
-
-    <section id="tips">
-
-        <h2>Anonymous Tips</h2>
-
-        <blockquote>
-
-            "I heard the music outside my window at 2:43 AM.
-            There wasn't a single vehicle on the street."
-
-        </blockquote>
-
-        <blockquote>
-
-            "The truck's headlights turned on by themselves."
-
-        </blockquote>
-
-        <blockquote>
-
-            "Never follow the music."
-
-        </blockquote>
-
-    </section>
-
-
-    <!-- ===================================================== -->
-    <!-- FOOTER -->
-    <!-- ===================================================== -->
-
-    <footer id="footer">
-
-        <p>
-            ICEY DATABASE
-        </p>
-
-        <p>
-            This archive is fictional and created for a school horror-comedy project.
-        </p>
-
-    </footer>
-
-
-    <!-- ===================================================== -->
-    <!-- JAVASCRIPT -->
-    <!-- ===================================================== -->
+            <!-- About Section (Disclaimer) -->
+            <section id="about" class="view">
+                <div class="disclaimer-box">
+                    <h2>ABOUT THE PRODUCTION</h2>
+                    <hr>
+                    <p><strong>ICEY Archive</strong> is the official companion website for the fictional psychological horror film <em>ICEY</em>.</p>
+                    <p>Every character, event, location, organization, recording, interview, newspaper, document, photograph, and piece of evidence presented on this website is entirely fictional.</p>
+                    <p>The documentary style, archive interface, and "found footage" aesthetics are storytelling devices created exclusively to support the narrative of the film.</p>
+                    <p>Nothing on this website represents real people, real missing-person cases, real government agencies, or real historical events.</p>
+                </div>
+            </section>
+        </main>
+    </div>
 
     <script src="script.js"></script>
-
 </body>
 </html>
