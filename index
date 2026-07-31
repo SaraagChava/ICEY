@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICEY DATABASE | Unofficial Investigation Archive</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ===================================================== -->
+    <!-- HEADER -->
+    <!-- ===================================================== -->
+
+    <header id="header">
+
+        <h1>ICEY CRIME DATABASE</h1>
+
+        <p class="subtitle">
+            Unofficial Public Archive • Last Updated 03:17 AM
+        </p>
+
+    </header>
+
+
+    <!-- ===================================================== -->
+    <!-- NAVIGATION -->
+    <!-- ===================================================== -->
+
+    <nav id="navbar">
+
+        <a href="#summary">Case</a>
+
+        <a href="#rumours">Rumours</a>
+
+        <a href="#victims">Victims</a>
+
+        <a href="#timeline">Timeline</a>
+
+        <a href="#gallery">Gallery</a>
+
+        <a href="#evidence">Evidence</a>
+
+        <a href="#tips">Tips</a>
+
+    </nav>
+
+
+    <!-- ===================================================== -->
+    <!-- HERO -->
+    <!-- ===================================================== -->
+
+    <section id="hero">
+
+        <h2>⚠ PUBLIC WARNING ⚠</h2>
+
+        <p>
+            Reports involving the individual known as
+            <strong>"ICEY"</strong>
+            continue to increase throughout the county.
+        </p>
+
+        <p>
+            Authorities have neither confirmed nor denied
+            the existence of the suspect.
+        </p>
+
+    </section>
+
+
+    <!-- ===================================================== -->
+    <!-- CASE SUMMARY -->
+    <!-- ===================================================== -->
+
+    <section id="summary">
+
+        <h2>Case Summary</h2>
+
+        <p>
+            Icey is believed to travel using an old
+            ice cream truck that appears after midnight.
+            Witnesses report hearing cheerful music before
+            unexplained disappearances occur.
+        </p>
+
+        <p>
+            The truck has never been clearly captured
+            on CCTV footage.
+        </p>
+
+        <p>
+            Several investigators have disappeared while
+            attempting to locate the vehicle.
+        </p>
+
+    </section>
+
+
+    <!-- ===================================================== -->
+    <!-- RUMOURS -->
+    <!-- ===================================================== -->
+
+    <section id="rumours">
+
+        <h2>Local Rumours</h2>
+
+        <ul>
+
+            <li>
+                The truck only appears when the streets are empty.
+            </li>
+
+            <li>
+                Icey's face has never been photographed clearly.
+            </li>
+
+            <li>
+                Children claim he offers "one last free ice cream."
+            </li>
+
+            <li>
+                CCTV recordings freeze exactly 17 seconds before
+                the truck arrives.
+            </li>
+
+            <li>
+                Every witness remembers the same melody,
+                but nobody can identify the song.
+            </li>
+
+        </ul>
+
+    </section>
+
+
+    <!-- ===================================================== -->
+    <!-- VICTIMS -->
+    <!-- ===================================================== -->
+
+    <section id="victims">
+
+        <h2>Known Victims</h2>
+
+        <table>
+
+            <tr>
+                <th>Name</th>
+                <th>Year</th>
+                <th>Status</th>
+            </tr>
+
+            <tr>
+                <td>Sarah Mills</td>
+                <td>2016</td>
+                <td>Missing</td>
+            </tr>
+
+            <tr>
+                <td>Officer Daniel Ross</td>
+                <td>2018</td>
+                <td>Missing</td>
+            </tr>
+
+            <tr>
+                <td>Jake Morgan</td>
+                <td>2021</td>
+                <td>Missing</td>
+            </tr>
+
+            <tr>
+                <td>Emily Carter</td>
+                <td>2023</td>
+                <td>Missing</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+
+    <!-- ===================================================== -->
+    <!-- TIMELINE -->
+    <!-- ===================================================== -->
+
+    <section id="timeline">
+
+        <h2>Incident Timeline</h2>
+
+        <ul>
+
+            <li>
+                2004 — First reported sighting of the truck.
+            </li>
+
+            <li>
+                2011 — Multiple witnesses hear music with no vehicle present.
+            </li>
+
+            <li>
+                2018 — Investigation team disappears.
+            </li>
+
+            <li>
+                2024 — Anonymous website containing Icey files appears online.
+            </li>
+
+        </ul>
+
+    </section>
+
+
+    <!-- ===================================================== -->
+    <!-- CCTV -->
+    <!-- ===================================================== -->
+
+    <section id="gallery">
+
+        <h2>CCTV Gallery</h2>
+
+        <div class="gallery">
+
+            <img src="assets/images/truck.jpg" alt="Ice Cream Truck">
+
+            <img src="assets/images/cctv1.jpg" alt="CCTV Frame">
+
+            <img src="assets/images/cctv2.jpg" alt="Evidence">
+
+        </div>
+
+    </section>
+
+
+    <!-- ===================================================== -->
+    <!-- EVIDENCE -->
+    <!-- ===================================================== -->
+
+    <section id="evidence">
+
+        <h2>Evidence Locker</h2>
+
+        <ul>
+
+            <li>Melted ice cream wrapper recovered at Scene #12</li>
+
+            <li>Broken music box mechanism</li>
+
+            <li>Anonymous handwritten map</li>
+
+            <li>Distorted radio recording</li>
+
+        </ul>
+
+    </section>
+
+
+    <!-- ===================================================== -->
+    <!-- AUDIO -->
+    <!-- ===================================================== -->
+
+    <section id="audio">
+
+        <h2>Recovered Audio</h2>
+
+        <p>
+            Evidence Item A-17
+        </p>
+
+        <!-- Person 2 can control this with JavaScript -->
+
+        <audio controls loop>
+
+            <source
+                src="assets/audio/icecream.mp3"
+                type="audio/mpeg">
+
+            Your browser does not support audio.
+
+        </audio>
+
+    </section>
+
+
+    <!-- ===================================================== -->
+    <!-- TIPS -->
+    <!-- ===================================================== -->
+
+    <section id="tips">
+
+        <h2>Anonymous Tips</h2>
+
+        <blockquote>
+
+            "I heard the music outside my window at 2:43 AM.
+            There wasn't a single vehicle on the street."
+
+        </blockquote>
+
+        <blockquote>
+
+            "The truck's headlights turned on by themselves."
+
+        </blockquote>
+
+        <blockquote>
+
+            "Never follow the music."
+
+        </blockquote>
+
+    </section>
+
+
+    <!-- ===================================================== -->
+    <!-- FOOTER -->
+    <!-- ===================================================== -->
+
+    <footer id="footer">
+
+        <p>
+            ICEY DATABASE
+        </p>
+
+        <p>
+            This archive is fictional and created for a school horror-comedy project.
+        </p>
+
+    </footer>
+
+
+    <!-- ===================================================== -->
+    <!-- JAVASCRIPT -->
+    <!-- ===================================================== -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
